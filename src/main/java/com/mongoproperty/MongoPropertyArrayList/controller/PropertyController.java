@@ -26,8 +26,8 @@ public class PropertyController {
     }
 
     @GetMapping("dummy")
-    public ResponseEntity dmmy() {
-        return new ResponseEntity<>("yeah dude...!", HttpStatus.OK);
+    public ResponseEntity<String> dmmy() {
+        return new ResponseEntity<String>("yeah dude...!", HttpStatus.OK);
     }
 
     @GetMapping
